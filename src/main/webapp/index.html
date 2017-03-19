@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="tracking-app">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+<div class="container" ng-controller="activityController">
+    <h2>{{message}}</h2>
+    <div class="container">
+        <h3>Search Activity</h3>
+        <input type="text" placeholder="Search Activity" ng-model="search"/>
+        <input type="button" value="Search" ng-click='getActivity()'/>
+    </div>
+    <h3>Search Results</h3>
+    <div class="container">
+        <table class="table table-bordered">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Duration</th>
+                <th>Calories Cost</th>
+                <th>Type</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>{{activity.name}}</td>
+                <td>{{activity.description}}</td>
+                <td>{{activity.duration}}</td>
+                <td>{{activity.caloriesCost}}</td>
+                <td>{{activity.type|uppercase}}</td>
+            </tr>
+            </tbody>
+        </table>
+
+    </div>
+</div>
+<script src="js/jquery-3.2.0.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-resource/1.6.3/angular-resource.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.css">
+<script src="app/app.js"></script>
+<script src="app/controllers/activityController.js"></script>
+<script src="app/services/activityService.js"></script>
+</body>
+</html>
