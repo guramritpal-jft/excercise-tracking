@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="container">
+        <h3>Search Activity</h3>
+        <input type="text" placeholder="Search Activity" ng-model="search"/>
+        <input type="button" value="Search" ng-click='getActivity()'/>
+    </div>
+    <h3>Search Results</h3>
+    <div class="container">
+        <table class="table table-bordered">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Duration</th>
+                <th>Type</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>{{activity.name}}</td>
+                <td>{{activity.description}}</td>
+                <td>{{activity.duration}}</td>
+                <td>{{activity.type|uppercase}}</td>
+            </tr>
+            </tbody>
+        </table>
+
+    </div>
+</div>

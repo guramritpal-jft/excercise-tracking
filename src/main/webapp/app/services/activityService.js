@@ -18,7 +18,8 @@ angular.module("services", []).factory('activityService', function ($resource) {
              },*/
             // using Resource for Restful services
             getActivity:function (activity) {
-                return $resource('/tracking-web/api/activities/:activity',{activity: activity});
+                return $resource('/tracking-web/api/activities/:activity',{activity: '@activity'})
+                    .get({activity:activity});
             }
         };
     }

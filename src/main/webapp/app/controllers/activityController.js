@@ -4,8 +4,6 @@
 'use strict';
 
 angular.module("controllers", []).controller('activityController', function ($scope, activityService) {
-    $scope.message = "Welcome to activities site";
-
     // using http service but prefer resource now to consume RESTful services
     /*$scope.getActivity = function getActivity() {
         var activity = $scope.search;
@@ -22,10 +20,8 @@ angular.module("controllers", []).controller('activityController', function ($sc
         });
     }*/
     $scope.getActivity = function getActivity() {
-        var activity = activityService.getActivity();
-        $scope.activity = activity.get({activity:$scope.search});
+        $scope.activity = activityService.getActivity($scope.search);
      }
-
 });
 
 

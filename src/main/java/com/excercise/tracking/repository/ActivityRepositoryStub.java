@@ -81,8 +81,8 @@ public class ActivityRepositoryStub {
 
 		Activity activity2 = new Activity();
 		activity2.setId(2);
-		activity1.setName("deadlift");
-		activity1.setType(Type.GYM);
+		activity2.setName("deadlift");
+		activity2.setType(Type.GYM);
 		activity2.setDuration(1);
 		activity2.setDescription("This is deadlift");
 		activities.add(activity2);
