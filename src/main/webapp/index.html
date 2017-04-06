@@ -3,24 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<div class="page-container">
+    <!-- Header-->
+    <div class="header">
+        <div class="header-title ">
+            <h3>Welcome to activities</h3>
+        </div>
+        <div class="header-search">
+            <input type="text "  placeholder="search"/>
+            <input type="button" value="Search"/>
+        </div>
+        <div class="header-nav-bar">
+            <ul class="nav-bar-header">
+                <li class="header-nav-item"><a href="#home">Home</a></li>
+                <li class="header-nav-item"><a href="#news">News</a></li>
+                <li class="header-nav-item"><a href="#contact">Contact</a></li>
+                <li class="header-nav-item"><a href="#about">About</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="content-body">
+        <div class="side-bar">
+            <div class="menu-bar">
+                <h3 style="margin-left: 5%">Menu</h3>
+                <ul class="ul-text">
+                    <li><a href="#/create">Create Activity</a></li>
+                    <li><a href="#/search">Search Activity</a></li>
+                    <li><a href="#/edit">Edit Activity</a></li>
+                    <li><a href="#/delete">Delete Activity</a></li>
+                </ul>
+            </div>
+            <div class="add-box">
+                <h5>Advertisements will goes here</h5>
+                <h5>Advertisements will goes here</h5>
+                <h5>Advertisements will goes here</h5>
+            </div>
+        </div>
+
+        <div class="body-container">
+            <p>
+                <br>scbevkjkbwvkbkbkB<br>
+                <br>ddddddddddddddddB<br>
+                <br>ffffffffffffffffsgdB<br>
+                <br>ffffffffffffffffsgdB<br>
+                <br>ffffffffffffffffsgdB<br>
+            </p>
+             <a href="#/home"></a>
+            <div ng-view></div>
+        </div>
+
+        <div class="right-add-bar">
+            <h5>Advertisements will goes here</h5>
+            <h5>Advertisements will goes here</h5>
+            <h5>Advertisements will goes here</h5>
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+    <!-- Footer-->
+    <div class="footer">
+        <h4>@Copyright all rights are reserved</h4>
+    </div>
+</div>
+
+<link rel="stylesheet" href="css/bootstrap.css">
 <script src="js/jquery-3.2.0.min.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/angular.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-resource/1.6.3/angular-resource.js"></script>
-<div class="center-block">
-    <h3 style="margin-left: 450px;color:#28a4c9">Welcome to activities site</h3>
-    <a href="#/csbc"></a>
-</div>
-
-<div ng-view></div>
-
-<div class="center-block">
-    <h3 style="margin-left: 450px; color:#28a4c9">@Copyright all rights are reserved</h3>
-</div>
-
-<link rel="stylesheet" href="css/bootstrap.css">
 <script src="app/app.js"></script>
 <script src="app/controllers/activityController.js"></script>
 <script src="app/services/activityService.js"></script>

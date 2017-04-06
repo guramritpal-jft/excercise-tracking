@@ -5,10 +5,13 @@
 
    app.config(function ($routeProvider) {
       $routeProvider
-          .when('/', {
-             templateUrl:'app/templates/home.html',
-             controller: 'activityController'
-          })
+          .when('/leftNav', {
+             templateUrl:'app/templates/sidebar.html',
+             controller: 'homeController'
+          }).when('/home',{
+          templateUrl:'app/templates/home.html',
+          controller: 'homeController'
+      })
    });
     /*app.config(['$resourceProvider', function($resourceProvider) {
         // Don't strip trailing slashes from calculated URLs
