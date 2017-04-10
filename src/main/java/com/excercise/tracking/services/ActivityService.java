@@ -24,14 +24,16 @@ public class ActivityService {
 
 	@GET
 	@Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
-	public List<Activity> getAllActivities() {
+	public Response getAllActivities() {
 		System.out.println("getAllActivities...........");
-		return activityResourceStub.findAllActivities();
+		List<Activity> activities = activityResourceStub.findAllActivities();
+		GenericEntity<List<Activity>> list = new GenericEntity<List<Activity>>(activities) {};
+		return Response.ok().entity(list).build();
 	}
 
 	@GET
 	@Path("/search")
-	@Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
+	@Produces({MediaType.APPLICATION_JSON})
 	@Consumes({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
 	public Response getAllActivitiesByName(@QueryParam(value = "name") String name) {
 		System.out.println("getAllActivities filters ..........");

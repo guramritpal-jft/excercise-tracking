@@ -19,6 +19,10 @@ angular.module("controllers", []).controller('activityController', function ($sc
 
         });
     }*/
+    $scope.activities = function getActivities() {
+        $scope.activities = activityService.getActivities();
+    };
+
     $scope.getActivity = function getActivity() {
         $scope.activity = activityService.getActivity($scope.search);
      }

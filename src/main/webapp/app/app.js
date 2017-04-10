@@ -3,14 +3,14 @@
 (function() {
    var app = window.angular.module("tracking-app", ['controllers', 'services', 'ngResource','ngRoute']);
 
-   app.config(function ($routeProvider) {
+   app.config(function($routeProvider) {
       $routeProvider
-          .when('/leftNav', {
-             templateUrl:'app/templates/sidebar.html',
-             controller: 'homeController'
-          }).when('/home',{
-          templateUrl:'app/templates/home.html',
-          controller: 'homeController'
+          .when("/", {
+             templateUrl:"app/templates/home.html"
+          })
+          .when('/activities', {
+          templateUrl:'app/templates/activities.html',
+          controller: "activityController"
       })
    });
     /*app.config(['$resourceProvider', function($resourceProvider) {

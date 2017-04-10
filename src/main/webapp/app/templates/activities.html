@@ -1,0 +1,26 @@
+<div>
+    <h3 style="margin-left: 42%">Activities</h3>
+</div>
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Duration</th>
+        <th>Type</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="activity in activities">
+        <td>{{activity.name}}</td>
+        <td>{{activity.description}}</td>
+        <td>{{activity.duration}}</td>
+        <td>{{activity.type|uppercase}}</td>
+    </tr>
+    </tbody>
+</table>
+
+
+<script>
+
+</script>
