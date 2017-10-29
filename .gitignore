@@ -14,3 +14,4 @@ ad-att-standalone-web/node
 bower_components/
 src/test/resources/
 /.idea/
+/.git
