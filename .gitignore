@@ -1,9 +1,7 @@
-.idea
 .classpath
 .project
 .settings
 .iml
-.idea
 *.iml
 target
 *~
@@ -13,3 +11,6 @@ node_modules
 /node/*
 /node_modules/*
 ad-att-standalone-web/node
+bower_components/
+src/test/resources/
+/.idea/
