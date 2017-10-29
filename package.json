@@ -1,0 +1,26 @@
+{
+  "name": "exercise-tracking-web",
+  "version": "1.0.0",
+  "description": "Web-app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guramritpal-jft/excercise-tracking.git"
+  },
+  "keywords": [
+    "rest"
+  ],
+  "author": "Guramritpal Singh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guramritpal-jft/excercise-tracking/issues"
+  },
+  "homepage": "https://github.com/guramritpal-jft/excercise-tracking#readme",
+
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}

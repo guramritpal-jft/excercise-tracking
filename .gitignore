@@ -9,7 +9,7 @@ target
 *~
 rebel.xml
 node_modules
-/exercise-tracking-web/src/main/webapp/assets/bower_components/
-/exercise-tracking-web/node/
-/exercise-tracking-web/node_modules/
+/bower_components/*
+/node/*
+/node_modules/*
 ad-att-standalone-web/node

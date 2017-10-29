@@ -13,5 +13,7 @@ import lombok.Setter;
 public class User {
 	private String Id;
 	private String name;
+	private String username;
+	private String password;
 	private List<Activity> activities;
 }
